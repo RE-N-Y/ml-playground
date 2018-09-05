@@ -17,9 +17,7 @@ from sklearn.model_selection import train_test_split
 train_set['Embarked'] = train_set['Embarked'].fillna('S')
 train_set['Cabin'] = train_set['Cabin'].fillna('N')
 train_set['Cabin'] = train_set['Cabin'].apply(lambda x: x[0])
-test_set['Embarked'] = test_set['Embarked'].fillna('S')
 train_set = train_set.fillna(0)
-test_set = test_set.fillna(0)
 description = train_set.describe(include = 'all')
 corr = train_set.corr()
 #%%
