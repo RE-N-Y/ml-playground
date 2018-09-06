@@ -2,8 +2,6 @@
 #%%
 import tensorflow as tf
 import pandas as pd
-import shutil
-import matplotlib.pyplot as plt
 
 train_set = pd.read_csv('./data/train-1.csv')
 train_set = train_set.drop(['Id'],axis=1)
